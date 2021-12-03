@@ -35,7 +35,7 @@ namespace ChatCoreTest
             while (Read(m_PacketData));
             Console.Write("\n\n");
         }
-
+        //convert write()
         private static bool Read(byte[] message)
         {
             if (r_Pos >= m_Pos) return false;
@@ -83,7 +83,6 @@ namespace ChatCoreTest
             _Write(bytes);
             return true;
         }
-
         // write a float into a byte array
         private static bool Write(float f)
         {
